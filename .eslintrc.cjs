@@ -1,0 +1,28 @@
+module.exports = {
+    extends: [
+      'eslint:recommended',
+      'plugin:vue/vue3-recommended',
+      'prettier',
+    ],
+    ignorePatterns: [".eslintrc.cjs", "vite.config.js"],
+    env: {
+        "vue/setup-compiler-macros": true
+    },
+    plugins: ['prettier'],
+    rules: {
+        'prettier/prettier': ["error", { "endOfLine": "auto" }],
+        'vue/require-default-prop': 'off',
+        'vue/html-indent': ['error', 4],
+        'vue/singleline-html-element-content-newline': 0,
+        'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+        "vue/max-attributes-per-line": ["error", {
+          "singleline": {
+            "max": 1
+          },      
+          "multiline": {
+            "max": 1
+          }
+        }],
+        "arrow-body-style": ["error", "as-needed"]
+    },
+  }
