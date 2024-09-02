@@ -23,7 +23,6 @@
     const { modelValue } = toRefs(props);
     const emit = defineEmits(["update:model-value"]);
     const innerValue = useInnerValue(modelValue, emit);
-    console.log(modelValue);
 </script>
 
 <template>
@@ -46,7 +45,7 @@
         display: flex;
         gap: 24px;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (width <= 800px) {
             flex-direction: column;
         }
     }

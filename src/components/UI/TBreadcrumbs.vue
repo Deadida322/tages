@@ -20,7 +20,9 @@
             class="breadcrumbs__item"
             :to="item.to">
             <template v-if="idx < items.length - 1">
-                <router-link class="breadcrumbs__item">
+                <router-link
+                    :to="item.to"
+                    class="breadcrumbs__item">
                     {{ item.label }}
                 </router-link>
                 <div class="breadcrumbs__delimiter">
@@ -39,6 +41,7 @@
         display: flex;
         gap: 6px;
         font-size: 16px;
+
         &__item {
             display: flex;
             gap: 6px;
@@ -58,11 +61,11 @@
             color: rgb(114 119 131);
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (width <= 800px) {
             font-size: 12px;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (width <= 600px) {
             font-size: 10px;
         }
     }

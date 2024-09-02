@@ -67,11 +67,11 @@
         &__heading {
             margin: 32px 0;
 
-            @media screen and (max-width: 800px) {
+            @media screen and (width <= 800px) {
                 margin: 24px 0;
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (width <= 600px) {
                 margin: 18px 0;
             }
         }
@@ -80,21 +80,19 @@
     .shop-container {
         margin-top: 40px;
         width: 100%;
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 48px;
-        grid-row-gap: 40px;
+        grid-gap: 40px 48px;
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (width <= 1200px) {
             grid-template-columns: repeat(3, 1fr);
         }
 
-        @media screen and (max-width: 800px) {
+        @media screen and (width <= 800px) {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (width <= 600px) {
             grid-template-columns: repeat(1, 1fr);
         }
     }

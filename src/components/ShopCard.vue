@@ -81,7 +81,7 @@
             position: absolute;
             top: 8px;
             left: 0;
-            background-color: #eb5757;
+            background-color: rgb(235 87 87);
             padding: 3px 16px;
             color: white;
         }
@@ -121,7 +121,7 @@
 
             &__old {
                 text-decoration: line-through;
-                color: #888888;
+                color: rgb(136 136 136);
             }
         }
 

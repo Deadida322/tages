@@ -81,6 +81,7 @@
 <style lang="scss">
     .select {
         position: relative;
+
         &__options {
             height: 40px;
             padding: 9px 16px;

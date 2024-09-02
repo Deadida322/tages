@@ -21,12 +21,12 @@
         line-height: 48px;
         text-align: left;
 
-        @media screen and (max-width: 800px) {
+        @media screen and (width <= 800px) {
             font-size: 24px;
             line-height: 38px;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (width <= 600px) {
             font-size: 18px;
             line-height: 28px;
         }
