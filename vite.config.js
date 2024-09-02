@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import legacy from "@vitejs/plugin-legacy";
-import svg from "vite-plugin-svgo";
+import svgLoader from 'vite-svg-loader'
 import checker from "vite-plugin-checker";
 import path from "path";
 // https://vitejs.dev/config/
@@ -11,7 +11,7 @@ export default defineConfig({
         legacy({
             targets: ["defaults", "not IE 11"]
         }),
-        svg(),
+        svgLoader(),
         checker({
             stylelint: {
                 lintCommand: "stylelint ./src/**/*.{css,vue} --fix"

@@ -11,7 +11,10 @@
   "dependencies": {
     "eslint": "^8.49.0",
     "meow": "^9.0.0",
-    "vue": "^3.3.4"
+    "pinia": "^2.2.2",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^4.1.1",

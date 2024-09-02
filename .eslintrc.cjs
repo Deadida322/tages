@@ -12,7 +12,6 @@ module.exports = {
     rules: {
         'prettier/prettier': ["error", { "endOfLine": "auto" }],
         'vue/require-default-prop': 'off',
-        'vue/html-indent': ['error', 4],
         'vue/singleline-html-element-content-newline': 0,
         'vue/component-name-in-template-casing': ['error', 'kebab-case'],
         "vue/max-attributes-per-line": ["error", {
